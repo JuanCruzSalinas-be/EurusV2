@@ -4,10 +4,9 @@ import Magnetic from './Magnetic'
 import { FluidParticlesBackground } from './ui/fluid-particles-background'
 
 const EMAIL = 'juancruzsalinasyx2@gmail.com'
-const PHONE_DISPLAY = '+1 (000) 000-0000' // placeholder — swap in the real Eurus line
-const PHONE_TEL = '+10000000000'
-const WEBSITE_DISPLAY = 'eurus.world'
-const WEBSITE_HREF = 'https://eurus.world'
+const EMAIL_DISPLAY = 'Eurus.help'
+const INSTAGRAM_HREF = 'https://instagram.com/eurus' // placeholder — swap in the real Eurus handle
+const LINKEDIN_HREF = 'https://linkedin.com/company/eurus' // placeholder — swap in the real Eurus page
 
 export default function CTA() {
   return (
@@ -40,7 +39,7 @@ export default function CTA() {
             <a href={`mailto:${EMAIL}`}>
               <p className="font-mono text-xs uppercase tracking-widest text-cream/50 mb-2">Write to us</p>
               <p className="font-display text-xl md:text-2xl group-hover:text-red transition-colors break-all">
-                {EMAIL}
+                {EMAIL_DISPLAY}
               </p>
             </a>
           </Magnetic>
@@ -53,10 +52,10 @@ export default function CTA() {
           transition={{ duration: 0.5, delay: 0.1 }}
         >
           <Magnetic className="inline-block group">
-            <a href={`tel:${PHONE_TEL}`}>
-              <p className="font-mono text-xs uppercase tracking-widest text-cream/50 mb-2">Call us</p>
+            <a href={INSTAGRAM_HREF} target="_blank" rel="noreferrer">
+              <p className="font-mono text-xs uppercase tracking-widest text-cream/50 mb-2">Check out our socials</p>
               <p className="font-display text-xl md:text-2xl group-hover:text-red transition-colors">
-                {PHONE_DISPLAY}
+                Instagram
               </p>
             </a>
           </Magnetic>
@@ -69,10 +68,10 @@ export default function CTA() {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <Magnetic className="inline-block group">
-            <a href={WEBSITE_HREF} target="_blank" rel="noreferrer">
-              <p className="font-mono text-xs uppercase tracking-widest text-cream/50 mb-2">Visit our website</p>
+            <a href={LINKEDIN_HREF} target="_blank" rel="noreferrer">
+              <p className="font-mono text-xs uppercase tracking-widest text-cream/50 mb-2">Follow us</p>
               <p className="font-display text-xl md:text-2xl group-hover:text-red transition-colors">
-                {WEBSITE_DISPLAY}
+                LinkedIn
               </p>
             </a>
           </Magnetic>
