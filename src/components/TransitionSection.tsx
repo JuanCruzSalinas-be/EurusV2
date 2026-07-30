@@ -42,20 +42,31 @@ export default function TransitionSection() {
     >
       <motion.h2
         style={{ color: textColor, fontFamily: 'var(--font-futura)' }}
-        className="font-bold leading-[0.88] tracking-tighter mb-16 max-w-4xl"
+        className="font-bold leading-[0.88] tracking-tighter mb-10 max-w-4xl"
       >
-        <RevealText style={{ fontSize: 'clamp(2rem, 6vw, 5rem)' }}>PLACEHOLDER COPY</RevealText>
+        <RevealText style={{ fontSize: 'clamp(2rem, 6vw, 5rem)' }}>INTERNSHIPS</RevealText>
         <RevealText delay={0.08} style={{ fontSize: 'clamp(2rem, 6vw, 5rem)' }}>
-          GOES RIGHT HERE
+          BUILT AROUND YOU
         </RevealText>
       </motion.h2>
 
       <motion.p
-        style={{ color: textColor, fontFamily: 'var(--font-garamond)' }}
-        className="max-w-xl text-lg md:text-xl mb-20"
+        style={{ color: textColor, fontFamily: 'var(--font-mono)' }}
+        className="max-w-xl text-xs uppercase tracking-widest mb-4"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placeholder copy for this
-        section — swap in the real wording whenever it's ready.
+        What Eurus does?
+      </motion.p>
+
+      <motion.p
+        style={{ color: textColor, fontFamily: 'var(--font-garamond)' }}
+        className="max-w-xl text-lg md:text-xl leading-relaxed mb-20"
+      >
+        High school shouldn't be all stress and guessing about the future. EURUS is here so you
+        don't end up spending thousands of dollars on a degree without ever really seeing what
+        that industry feels like in real life. You get real-world experience now, while time is
+        still on your side. Internships aren't meant to lock you into a career; they're meant to
+        help you figure out whether you even like that industry, so you can make choices with
+        confidence instead of anxiety.
       </motion.p>
 
       <div className="relative flex flex-col items-center max-w-xl mx-auto">
