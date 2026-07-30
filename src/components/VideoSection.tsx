@@ -3,6 +3,7 @@ import eurusVideo from '../assets/video/eurus-video.mp4'
 
 export default function VideoSection() {
   const videoRef = useRef<HTMLVideoElement>(null)
+  const inViewRef = useRef(false)
 
   useEffect(() => {
     const video = videoRef.current
@@ -10,6 +11,7 @@ export default function VideoSection() {
 
     const observer = new IntersectionObserver(
       ([entry]) => {
+        inViewRef.current = entry.isIntersecting
         if (entry.isIntersecting) {
           video.play().catch(() => {})
         } else {
@@ -32,8 +34,16 @@ export default function VideoSection() {
           muted
           loop
           playsInline
-          controls
-          className="block w-full h-auto"
+          autoPlay
+          disablePictureInPicture
+          disableRemotePlayback
+          controlsList="nodownload noplaybackrate nofullscreen"
+          tabIndex={-1}
+          onContextMenu={(e) => e.preventDefault()}
+          onPause={(e) => {
+            if (inViewRef.current) e.currentTarget.play().catch(() => {})
+          }}
+          className="block w-full h-auto pointer-events-none select-none"
         />
       </div>
     </section>
