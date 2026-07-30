@@ -44,9 +44,7 @@ export default function Industries() {
         className="text-ink leading-snug font-normal uppercase px-6 md:px-10"
         style={{ fontSize: 'clamp(0.75rem, 1.3vw, 1rem)', fontFamily: 'var(--font-garamond)', letterSpacing: '0.25em' }}
       >
-        <RevealText>SOME OF THE</RevealText>
-        <RevealText delay={0.08}>INDUSTRIES WE PLACE</RevealText>
-        <RevealText delay={0.16}>STUDENTS IN</RevealText>
+        <RevealText>SOME OF THE INDUSTRIES WE PLACE IN</RevealText>
       </h2>
 
       <div className="relative w-full">
