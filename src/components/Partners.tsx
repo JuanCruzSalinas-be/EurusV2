@@ -36,12 +36,41 @@ export default function Partners() {
         <RevealText delay={0.1}>PARTNERS</RevealText>
       </h2>
 
-      <div className="relative w-full">
+      <div className="relative w-full mb-16 md:mb-20">
         <div className="marquee-track flex w-max gap-4 md:gap-6">
           {track.map((p, i) => (
             <LogoCard key={`${p.name}-${i}`} p={p} />
           ))}
         </div>
+      </div>
+
+      <div className="px-6 md:px-10">
+        <p
+          className="max-w-xl text-xs uppercase tracking-widest text-ink mb-4"
+          style={{ fontFamily: 'var(--font-mono)' }}
+        >
+          How Eurus works?
+        </p>
+        <p
+          className="max-w-2xl text-lg md:text-xl leading-relaxed text-ink/90"
+          style={{ fontFamily: 'var(--font-garamond)' }}
+        >
+          EURUS creates customized internship experiences for high school students across many
+          fields (not just STEM), including business, art, fashion, marketing, policy, and more.
+          We match every accepted student with one of our company partners across the U.S., so
+          there is no rejection; if a spot doesn't fit, we keep matching until it does, and you
+          hear back within about two weeks with updates on your placement or the next opportunity.
+        </p>
+        <p
+          className="max-w-2xl text-lg md:text-xl leading-relaxed text-ink/90 mt-6"
+          style={{ fontFamily: 'var(--font-garamond)' }}
+        >
+          All student fees are covered: housing, transportation, and program costs! You choose
+          when and how you intern: school year or summer, fall, winter, or spring; remote,
+          hybrid, or in-person. Because our partner companies are there to host interns, we can
+          focus on building a full-service experience that fits your schedule, your interests,
+          and your future goals, not theirs.
+        </p>
       </div>
     </section>
   )
