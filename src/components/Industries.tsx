@@ -1,5 +1,5 @@
 import RevealText from './RevealText'
-import fashionImg from '../assets/industries/fashion-src.jpg'
+import fashionImg from '../assets/industries/charlota-blunarova-r5xHI_H44aM-unsplash.jpg'
 import marketingImg from '../assets/industries/marketing-src.jpg'
 import financeImg from '../assets/industries/finance-src.jpg'
 import techImg from '../assets/industries/tech-src.jpg'

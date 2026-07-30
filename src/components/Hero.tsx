@@ -18,8 +18,8 @@ export default function Hero() {
       </motion.p>
 
       <h1
-        className="font-display text-extra-bold text-red leading-[0.85] tracking-tighter"
-        style={{ fontSize: 'clamp(3.5rem, 14vw, 13rem)' }}
+        className="text-extra-bold text-red leading-[0.85] tracking-tighter"
+        style={{ fontSize: 'clamp(2.5rem, 10vw, 9rem)', fontFamily: "'Archivo Black', sans-serif" }}
       >
         <RevealText delay={0.05}>ACCESS</RevealText>
         <RevealText delay={0.15}>→ SUCCESS</RevealText>

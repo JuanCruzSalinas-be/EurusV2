@@ -13,7 +13,11 @@ export default function Nav() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-10 py-5 mix-blend-difference">
-      <a href="#top" className="font-display text-white text-xl md:text-2xl tracking-tight">
+      <a
+        href="#top"
+        className="text-white text-xl md:text-2xl tracking-tight"
+        style={{ fontFamily: "'Archivo Black', sans-serif" }}
+      >
         EURUS
       </a>
 
