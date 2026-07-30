@@ -1,0 +1,84 @@
+import { motion } from 'framer-motion'
+import RevealText from './RevealText'
+import Magnetic from './Magnetic'
+import { FluidParticlesBackground } from './ui/fluid-particles-background'
+
+const EMAIL = 'juancruzsalinasyx2@gmail.com'
+const PHONE_DISPLAY = '+1 (000) 000-0000' // placeholder — swap in the real Eurus line
+const PHONE_TEL = '+10000000000'
+const WEBSITE_DISPLAY = 'eurus.world'
+const WEBSITE_HREF = 'https://eurus.world'
+
+export default function CTA() {
+  return (
+    <section id="contact" className="relative bg-ink text-cream px-6 md:px-10 py-24 md:py-32 overflow-hidden">
+      <FluidParticlesBackground
+        dark
+        particleCount={400}
+        className="absolute inset-0 h-full bg-transparent pointer-events-none"
+      />
+      <div className="relative z-10">
+      <h2
+        className="font-bold leading-[0.88] tracking-tighter mb-16"
+        style={{ fontSize: 'clamp(2.75rem, 9vw, 8rem)', fontFamily: 'var(--font-futura)' }}
+      >
+        <RevealText>WHAT DOES</RevealText>
+        <RevealText delay={0.08}>
+          YOUR <span className="text-red">FUTURE</span>
+        </RevealText>
+        <RevealText delay={0.16}>DEMAND?</RevealText>
+      </h2>
+
+      <div className="grid md:grid-cols-3 gap-8 md:gap-6 border-t border-cream/20 pt-10">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.4 }}
+          transition={{ duration: 0.5 }}
+        >
+          <Magnetic className="inline-block group">
+            <a href={`mailto:${EMAIL}`}>
+              <p className="font-mono text-xs uppercase tracking-widest text-cream/50 mb-2">Write to us</p>
+              <p className="font-display text-xl md:text-2xl group-hover:text-red transition-colors break-all">
+                {EMAIL}
+              </p>
+            </a>
+          </Magnetic>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.4 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+        >
+          <Magnetic className="inline-block group">
+            <a href={`tel:${PHONE_TEL}`}>
+              <p className="font-mono text-xs uppercase tracking-widest text-cream/50 mb-2">Call us</p>
+              <p className="font-display text-xl md:text-2xl group-hover:text-red transition-colors">
+                {PHONE_DISPLAY}
+              </p>
+            </a>
+          </Magnetic>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.4 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
+          <Magnetic className="inline-block group">
+            <a href={WEBSITE_HREF} target="_blank" rel="noreferrer">
+              <p className="font-mono text-xs uppercase tracking-widest text-cream/50 mb-2">Visit our website</p>
+              <p className="font-display text-xl md:text-2xl group-hover:text-red transition-colors">
+                {WEBSITE_DISPLAY}
+              </p>
+            </a>
+          </Magnetic>
+        </motion.div>
+      </div>
+      </div>
+    </section>
+  )
+}

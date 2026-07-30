@@ -1,0 +1,89 @@
+@import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:wght@400;500;600&family=Jost:wght@700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap');
+
+@theme {
+  --font-display: 'Anton', 'Archivo Black', sans-serif;
+  --font-sans: 'General Sans', 'Space Grotesk', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  --font-garamond: 'EB Garamond', Garamond, serif;
+  /* "Futura" only renders if the visitor has it installed locally (it ships with
+     macOS/Office) — nothing is downloaded or embedded. Jost is the free fallback. */
+  --font-futura: Futura, 'Jost', sans-serif;
+
+  --color-cream: #fdfcfa;
+  --color-red: #f0574a;
+  --color-red-dark: #b81f17;
+  --color-ink: #0b0b0c;
+  --color-ink-soft: #1a1a1c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--color-red);
+  color: var(--color-cream);
+}
+
+.marquee-track {
+  animation: marquee 28s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* White -> red hover-invert: a filled panel sweeps up from the bottom on hover,
+   swapping the label from ink to cream as it passes the midpoint. */
+.hover-invert {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  color: var(--color-ink);
+  transition: color 0.4s ease 0.05s;
+}
+
+.hover-invert::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--color-red);
+  transform: translateY(101%);
+  transition: transform 0.4s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.hover-invert:hover {
+  color: var(--color-cream);
+}
+
+.hover-invert:hover::before {
+  transform: translateY(0%);
+}
+
+/* Fattens single-weight display type (Anton has no heavier weight to switch to)
+   by drawing a matching-color stroke on top of the fill, thickening the strokes. */
+.text-extra-bold {
+  -webkit-text-stroke: 0.035em currentColor;
+  paint-order: stroke fill;
+}
