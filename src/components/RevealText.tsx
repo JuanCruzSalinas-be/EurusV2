@@ -1,11 +1,11 @@
-import { motion } from 'framer-motion'
+import { motion, type Variants } from 'framer-motion'
 import type { ElementType, ReactNode } from 'react'
 
-const line = {
+const line: Variants = {
   hidden: { y: '110%' },
   visible: (delay: number) => ({
     y: '0%',
-    transition: { duration: 0.8, delay, ease: [0.16, 1, 0.3, 1] },
+    transition: { duration: 0.8, delay, ease: [0.16, 1, 0.3, 1] as const },
   }),
 }
 
@@ -22,7 +22,7 @@ export default function RevealText({
   delay?: number
   style?: React.CSSProperties
 }) {
-  const MotionTag = motion(Tag as never)
+  const MotionTag = motion(Tag) as React.ComponentType<Record<string, unknown>>
 
   return (
     <MotionTag
