@@ -75,7 +75,7 @@ export default function Partners() {
           </p>
         </div>
 
-        <div className="relative mx-auto md:mx-0 md:-ml-24 w-48 md:w-64 shrink-0">
+        <div className="relative mx-auto md:mx-0 md:-ml-48 w-48 md:w-64 shrink-0">
           <img
             src={calculator}
             alt="Calculator"
