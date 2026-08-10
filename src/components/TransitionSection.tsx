@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import RevealText from './RevealText'
 import tape from '../assets/decor/tape-clear.png'
@@ -23,14 +23,25 @@ export default function TransitionSection() {
     offset: ['start start', 'end start'],
   })
 
+  const [isMobile, setIsMobile] = useState(false)
+  useEffect(() => {
+    const mql = window.matchMedia('(max-width: 767px)')
+    setIsMobile(mql.matches)
+    const onChange = (e: MediaQueryListEvent) => setIsMobile(e.matches)
+    mql.addEventListener('change', onChange)
+    return () => mql.removeEventListener('change', onChange)
+  }, [])
+
+  const toRed = isMobile ? [0, 0.01, 0.02, 0.94, 0.96] : [0, 0.02, 0.04, 0.94, 0.96]
+
   const background = useTransform(
     scrollYProgress,
-    [0, 0.02, 0.04, 0.94, 0.96],
+    toRed,
     ['#fdfcfa', '#fdfcfa', '#f0574a', '#f0574a', '#fdfcfa'],
   )
   const textColor = useTransform(
     scrollYProgress,
-    [0, 0.02, 0.04, 0.94, 0.96],
+    toRed,
     ['#0b0b0c', '#0b0b0c', '#fdfcfa', '#fdfcfa', '#0b0b0c'],
   )
 
