@@ -19,7 +19,7 @@ function IndustryCard({ ind }: { ind: (typeof INDUSTRIES)[number] }) {
   return (
     <a
       href="#contact"
-      className="group relative block shrink-0 h-[420px] w-[320px] overflow-hidden rounded-2xl bg-ink"
+      className="group relative block shrink-0 h-[220px] w-[170px] md:h-[420px] md:w-[320px] overflow-hidden rounded-xl md:rounded-2xl bg-ink"
     >
       <img
         src={ind.image}
@@ -27,9 +27,9 @@ function IndustryCard({ ind }: { ind: (typeof INDUSTRIES)[number] }) {
         className="absolute inset-0 h-full w-full object-cover opacity-70 grayscale group-hover:grayscale-0 group-hover:opacity-90 transition-all duration-500 group-hover:scale-105"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/10 to-transparent" />
-      <div className="absolute bottom-6 left-6 right-6 font-mono text-cream">
-        <p className="text-3xl font-bold uppercase tracking-tight">{ind.name}</p>
-        <p className="text-base text-cream/70 mt-1">{ind.blurb}</p>
+      <div className="absolute bottom-3 left-3 right-3 md:bottom-6 md:left-6 md:right-6 font-mono text-cream">
+        <p className="text-lg md:text-3xl font-bold uppercase tracking-tight">{ind.name}</p>
+        <p className="text-xs md:text-base text-cream/70 mt-1">{ind.blurb}</p>
       </div>
     </a>
   )
