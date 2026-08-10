@@ -72,7 +72,7 @@ export default function Hero() {
               </h1>
             </div>
 
-            <div className="w-full flex justify-center pr-[6%] md:pr-[8%] -mt-4 md:-mt-8 relative z-20">
+            <div className="w-full flex justify-center pr-[6%] md:pr-[14%] -mt-4 md:-mt-8 relative z-20">
               <h1
                 className="text-extra-bold text-ink leading-[0.85] tracking-tighter m-0 p-0 uppercase"
                 style={{ fontSize: 'clamp(4rem,14vw,200px)', fontFamily: 'var(--font-eurus)' }}
