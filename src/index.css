@@ -2,14 +2,21 @@
 @import url('https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap');
 @import 'tailwindcss';
 
+@font-face {
+  font-family: 'Eurus';
+  src: url('./assets/logos/EurusFont-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
-  --font-display: 'Anton', 'Archivo Black', sans-serif;
-  --font-sans: 'General Sans', 'Space Grotesk', sans-serif;
-  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  --font-display: 'Eurus', 'Anton', 'Archivo Black', sans-serif;
+  --font-sans: 'Eurus', 'General Sans', 'Space Grotesk', sans-serif;
+  --font-mono: 'Eurus', 'JetBrains Mono', ui-monospace, monospace;
+  --font-jetbrains: 'JetBrains Mono', ui-monospace, monospace;
   --font-garamond: 'EB Garamond', Garamond, serif;
-  /* "Futura" only renders if the visitor has it installed locally (it ships with
-     macOS/Office) — nothing is downloaded or embedded. Jost is the free fallback. */
-  --font-futura: Futura, 'Jost', sans-serif;
+  --font-eurus: 'Eurus', 'Archivo Black', sans-serif;
 
   --color-cream: #fdfcfa;
   --color-red: #f0574a;
@@ -28,7 +35,11 @@ html {
 
 body {
   margin: 0;
-  background: var(--color-cream);
+  background-color: var(--color-cream);
+  background-image:
+    linear-gradient(to right, #0b0b0c08 1px, transparent 1px),
+    linear-gradient(to bottom, #0b0b0c08 1px, transparent 1px);
+  background-size: 4rem 4rem;
   color: var(--color-ink);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;

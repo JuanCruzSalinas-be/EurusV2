@@ -41,7 +41,7 @@ export default function TransitionSection() {
       className="relative py-24 md:py-40 px-6 md:px-10 overflow-hidden"
     >
       <motion.h2
-        style={{ color: textColor, fontFamily: 'var(--font-futura)' }}
+        style={{ color: textColor, fontFamily: 'var(--font-eurus)' }}
         className="font-bold leading-[0.88] tracking-tighter mb-10 max-w-4xl"
       >
         <RevealText style={{ fontSize: 'clamp(2rem, 6vw, 5rem)' }}>INTERNSHIPS</RevealText>
@@ -52,13 +52,13 @@ export default function TransitionSection() {
 
       <motion.p
         style={{ color: textColor, fontFamily: 'var(--font-mono)' }}
-        className="max-w-xl text-xs uppercase tracking-widest mb-4"
+        className="max-w-xl text-2xl md:text-3xl uppercase tracking-widest mb-4"
       >
         What Eurus does?
       </motion.p>
 
       <motion.p
-        style={{ color: textColor, fontFamily: 'var(--font-garamond)' }}
+        style={{ color: textColor, fontFamily: 'var(--font-jetbrains)' }}
         className="max-w-xl text-lg md:text-xl leading-relaxed mb-20"
       >
         High school shouldn't be all stress and guessing about the future. EURUS is here so you

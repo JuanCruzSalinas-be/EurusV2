@@ -28,8 +28,8 @@ function IndustryCard({ ind }: { ind: (typeof INDUSTRIES)[number] }) {
       />
       <div className="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/10 to-transparent" />
       <div className="absolute bottom-6 left-6 right-6 font-mono text-cream">
-        <p className="text-2xl font-bold uppercase tracking-tight">{ind.name}</p>
-        <p className="text-sm text-cream/70 mt-1">{ind.blurb}</p>
+        <p className="text-3xl font-bold uppercase tracking-tight">{ind.name}</p>
+        <p className="text-base text-cream/70 mt-1">{ind.blurb}</p>
       </div>
     </a>
   )
@@ -39,10 +39,10 @@ export default function Industries() {
   const track = [...INDUSTRIES, ...INDUSTRIES]
 
   return (
-    <section id="industries" className="bg-cream py-24 md:py-32 overflow-hidden">
+    <section id="industries" className="py-24 md:py-32 overflow-hidden">
       <h2
         className="text-ink leading-snug font-normal uppercase px-6 md:px-10"
-        style={{ fontSize: 'clamp(0.75rem, 1.3vw, 1rem)', fontFamily: 'var(--font-garamond)', letterSpacing: '0.25em' }}
+        style={{ fontSize: 'clamp(1.5rem, 3vw, 2.2rem)', fontFamily: 'var(--font-eurus)', letterSpacing: '0.15em' }}
       >
         <RevealText>SOME OF THE INDUSTRIES WE PLACE IN</RevealText>
       </h2>

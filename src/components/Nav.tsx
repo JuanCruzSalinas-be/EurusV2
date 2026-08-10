@@ -15,13 +15,13 @@ export default function Nav() {
     <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-10 py-5 mix-blend-difference">
       <a
         href="#top"
-        className="text-white text-xl md:text-2xl tracking-tight"
-        style={{ fontFamily: "'Archivo Black', sans-serif" }}
+        className="text-white text-3xl md:text-4xl tracking-tight"
+        style={{ fontFamily: 'var(--font-eurus)' }}
       >
         EURUS
       </a>
 
-      <nav className="hidden md:flex items-center gap-8 text-white text-sm font-semibold uppercase tracking-wide">
+      <nav className="hidden md:flex items-center gap-8 text-white text-lg font-semibold uppercase tracking-wide">
         {LINKS.map((l) => (
           <a key={l.href} href={l.href} className="hover:opacity-60 transition-opacity">
             {l.label}
@@ -52,7 +52,7 @@ export default function Nav() {
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="hover-invert font-display text-3xl px-4 py-1 text-cream"
+                className="hover-invert font-display text-4xl px-4 py-1 text-cream"
               >
                 {l.label}
               </a>

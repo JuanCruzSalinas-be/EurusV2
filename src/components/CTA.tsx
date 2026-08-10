@@ -19,7 +19,7 @@ export default function CTA() {
       <div className="relative z-10">
       <h2
         className="font-bold leading-[0.88] tracking-tighter mb-16"
-        style={{ fontSize: 'clamp(2.75rem, 9vw, 8rem)', fontFamily: 'var(--font-futura)' }}
+        style={{ fontSize: 'clamp(2.75rem, 9vw, 8rem)', fontFamily: 'var(--font-eurus)' }}
       >
         <RevealText>WHAT DOES</RevealText>
         <RevealText delay={0.08}>
@@ -37,8 +37,8 @@ export default function CTA() {
         >
           <Magnetic className="inline-block group">
             <a href={`mailto:${EMAIL}`}>
-              <p className="font-mono text-xs uppercase tracking-widest text-cream/50 mb-2">Write to us</p>
-              <p className="font-display text-xl md:text-2xl group-hover:text-red transition-colors break-all">
+              <p className="font-mono text-base uppercase tracking-widest text-cream/50 mb-2">Write to us</p>
+              <p className="font-display text-3xl md:text-4xl group-hover:text-red transition-colors break-all">
                 {EMAIL_DISPLAY}
               </p>
             </a>
@@ -53,8 +53,8 @@ export default function CTA() {
         >
           <Magnetic className="inline-block group">
             <a href={INSTAGRAM_HREF} target="_blank" rel="noreferrer">
-              <p className="font-mono text-xs uppercase tracking-widest text-cream/50 mb-2">Check out our socials</p>
-              <p className="font-display text-xl md:text-2xl group-hover:text-red transition-colors">
+              <p className="font-mono text-base uppercase tracking-widest text-cream/50 mb-2">Check out our socials</p>
+              <p className="font-display text-3xl md:text-4xl group-hover:text-red transition-colors">
                 Instagram
               </p>
             </a>
@@ -69,8 +69,8 @@ export default function CTA() {
         >
           <Magnetic className="inline-block group">
             <a href={LINKEDIN_HREF} target="_blank" rel="noreferrer">
-              <p className="font-mono text-xs uppercase tracking-widest text-cream/50 mb-2">Follow us</p>
-              <p className="font-display text-xl md:text-2xl group-hover:text-red transition-colors">
+              <p className="font-mono text-base uppercase tracking-widest text-cream/50 mb-2">Follow us</p>
+              <p className="font-display text-3xl md:text-4xl group-hover:text-red transition-colors">
                 LinkedIn
               </p>
             </a>

@@ -26,7 +26,7 @@ export default function VideoSection() {
   }, [])
 
   return (
-    <section id="video" className="bg-cream py-24 md:py-32">
+    <section id="video" className="py-24 md:py-32">
       <div className="relative left-1/2 w-screen -translate-x-1/2">
         <video
           ref={videoRef}
