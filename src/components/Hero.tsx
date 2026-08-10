@@ -102,7 +102,7 @@ export default function Hero() {
             <motion.div
               animate={{ y: [0, -20, 0] }}
               transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
-              className="absolute top-[-10%] md:top-[-14%] right-[6%] md:right-[2%] z-30 pointer-events-auto"
+              className="absolute top-[10%] md:top-[-14%] right-[4%] md:right-[2%] z-30 pointer-events-auto"
             >
               <a href="#industries" className="relative block w-16 md:w-40 aspect-[3/3.5] bg-ink/90 backdrop-blur-md rounded-xl md:rounded-[2rem] p-2 md:p-4 overflow-hidden rotate-[10deg] shadow-2xl hover:rotate-0 transition-transform duration-500">
                 <img src={financeImg} alt="Finance internship" className="absolute inset-0 h-full w-full object-cover opacity-60" />
@@ -121,7 +121,7 @@ export default function Hero() {
               <ArrowRight />
             </div>
 
-            <div className="absolute bottom-[-46%] right-[36%] md:bottom-[-30%] md:right-[10%] z-40 pointer-events-auto">
+            <div className="absolute bottom-[-46%] right-[4%] md:bottom-[-30%] md:right-[10%] z-40 pointer-events-auto">
               <CircularBadge />
             </div>
           </div>
