@@ -23,7 +23,7 @@ function CircularBadge() {
     <Magnetic>
       <a
         href="#contact"
-        className="relative w-28 h-28 md:w-36 md:h-36 bg-ink rounded-full flex items-center justify-center shadow-xl rotate-12 hover:scale-105 transition-transform cursor-pointer"
+        className="relative w-16 h-16 md:w-36 md:h-36 bg-ink rounded-full flex items-center justify-center shadow-xl rotate-12 hover:scale-105 transition-transform cursor-pointer"
       >
         <div className="absolute inset-1 animate-[spin_10s_linear_infinite]">
           <svg viewBox="0 0 100 100" className="w-full h-full">
@@ -88,11 +88,11 @@ export default function Hero() {
             <motion.div
               animate={{ y: [0, -15, 0] }}
               transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
-              className="absolute bottom-[-12%] left-[0%] md:left-[2%] z-30 pointer-events-auto"
+              className="absolute bottom-[2%] md:bottom-[-12%] left-[-6%] md:left-[2%] z-30 pointer-events-auto"
             >
-              <a href="#industries" className="block w-32 md:w-40 aspect-[3/3.5] bg-ink/90 backdrop-blur-md rounded-[2rem] p-4 overflow-hidden rotate-[-10deg] shadow-2xl hover:rotate-0 transition-transform duration-500">
+              <a href="#industries" className="block w-16 md:w-40 aspect-[3/3.5] bg-ink/90 backdrop-blur-md rounded-xl md:rounded-[2rem] p-2 md:p-4 overflow-hidden rotate-[-10deg] shadow-2xl hover:rotate-0 transition-transform duration-500">
                 <img src={techImg} alt="Tech internship" className="absolute inset-0 h-full w-full object-cover opacity-60" />
-                <div className="relative text-left mt-auto">
+                <div className="relative text-left mt-auto hidden md:block">
                   <p className="font-bold text-sm md:text-base text-cream">Tech</p>
                   <p className="text-[10px] md:text-xs text-cream/70 mt-1">Engineering & product</p>
                 </div>
@@ -102,26 +102,26 @@ export default function Hero() {
             <motion.div
               animate={{ y: [0, -20, 0] }}
               transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut', delay: 1 }}
-              className="absolute top-[-14%] right-[0%] md:right-[2%] z-30 pointer-events-auto"
+              className="absolute top-[-16%] md:top-[-14%] right-[-6%] md:right-[2%] z-30 pointer-events-auto"
             >
-              <a href="#industries" className="relative block w-32 md:w-40 aspect-[3/3.5] bg-ink/90 backdrop-blur-md rounded-[2rem] p-4 overflow-hidden rotate-[10deg] shadow-2xl hover:rotate-0 transition-transform duration-500">
+              <a href="#industries" className="relative block w-16 md:w-40 aspect-[3/3.5] bg-ink/90 backdrop-blur-md rounded-xl md:rounded-[2rem] p-2 md:p-4 overflow-hidden rotate-[10deg] shadow-2xl hover:rotate-0 transition-transform duration-500">
                 <img src={financeImg} alt="Finance internship" className="absolute inset-0 h-full w-full object-cover opacity-60" />
-                <div className="relative text-left mt-auto self-end">
+                <div className="relative text-left mt-auto self-end hidden md:block">
                   <p className="font-bold text-sm md:text-base text-cream">Finance</p>
                   <p className="text-[10px] md:text-xs text-cream/70 mt-1">Markets & analysis</p>
                 </div>
               </a>
             </motion.div>
 
-            <div className="absolute bottom-[-24%] left-[14%] md:left-[20%] w-16 h-16 md:w-24 md:h-24 z-20">
+            <div className="absolute bottom-[-14%] left-[16%] md:bottom-[-24%] md:left-[20%] w-10 h-10 md:w-24 md:h-24 z-20">
               <ArrowLeft />
             </div>
 
-            <div className="absolute top-[-24%] right-[14%] md:right-[20%] w-16 h-16 md:w-24 md:h-24 z-20">
+            <div className="absolute top-[-14%] right-[16%] md:top-[-24%] md:right-[20%] w-10 h-10 md:w-24 md:h-24 z-20">
               <ArrowRight />
             </div>
 
-            <div className="absolute bottom-[-30%] right-[2%] md:right-[10%] z-40 pointer-events-auto">
+            <div className="absolute bottom-[-14%] right-[-2%] md:bottom-[-30%] md:right-[10%] z-40 pointer-events-auto">
               <CircularBadge />
             </div>
           </div>
