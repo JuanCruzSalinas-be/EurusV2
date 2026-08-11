@@ -19,10 +19,10 @@
   --font-eurus: 'Eurus', 'Archivo Black', sans-serif;
 
   --color-cream: #fdfcfa;
-  --color-red: #f0574a;
-  --color-red-dark: #b81f17;
-  --color-ink: #0b0b0c;
-  --color-ink-soft: #1a1a1c;
+  --color-red: #fbc123;
+  --color-red-dark: #d99a00;
+  --color-ink: #0a1f3d;
+  --color-ink-soft: #142a52;
 }
 
 * {
@@ -37,8 +37,8 @@ body {
   margin: 0;
   background-color: var(--color-cream);
   background-image:
-    linear-gradient(to right, #0b0b0c08 1px, transparent 1px),
-    linear-gradient(to bottom, #0b0b0c08 1px, transparent 1px);
+    linear-gradient(to right, #0a1f3d08 1px, transparent 1px),
+    linear-gradient(to bottom, #0a1f3d08 1px, transparent 1px);
   background-size: 4rem 4rem;
   color: var(--color-ink);
   font-family: var(--font-sans);
@@ -48,7 +48,7 @@ body {
 
 ::selection {
   background: var(--color-red);
-  color: var(--color-cream);
+  color: var(--color-ink);
 }
 
 .marquee-track {
@@ -85,7 +85,7 @@ body {
 }
 
 .hover-invert:hover {
-  color: var(--color-cream);
+  color: var(--color-ink);
 }
 
 .hover-invert:hover::before {
