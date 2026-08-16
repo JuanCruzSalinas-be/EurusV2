@@ -100,11 +100,16 @@ body {
 /* Fattens single-weight display type (Anton has no heavier weight to switch to)
    by drawing a matching-color stroke on top of the fill, thickening the strokes.
    Also applied to the standard bold utilities so every "bold" element renders
-   the same stroke-based weight instead of a per-browser synthesized one. */
+   the same stroke-based weight instead of a per-browser synthesized one — tuned
+   to match Chrome's old synthetic-bold thickness rather than a thinner average. */
 .text-extra-bold,
 .font-bold,
-.font-semibold,
 .font-black {
-  -webkit-text-stroke: 0.035em currentColor;
+  -webkit-text-stroke: 0.045em currentColor;
+  paint-order: stroke fill;
+}
+
+.font-semibold {
+  -webkit-text-stroke: 0.028em currentColor;
   paint-order: stroke fill;
 }
