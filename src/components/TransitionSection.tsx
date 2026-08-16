@@ -54,13 +54,11 @@ export default function TransitionSection() {
       <div className="md:grid md:grid-cols-2 md:gap-16 md:items-center">
         <div>
           <motion.h2
-            style={{ color: textColor, fontFamily: 'var(--font-eurus)' }}
-            className="font-bold leading-[0.88] tracking-tighter mb-10 max-w-4xl"
+            style={{ color: textColor, fontFamily: 'var(--font-eurus)', fontSize: 'clamp(2.75rem, 9vw, 8rem)' }}
+            className="font-bold leading-[0.88] tracking-tighter mb-16"
           >
-            <RevealText style={{ fontSize: 'clamp(2rem, 6vw, 5rem)' }}>INTERNSHIPS</RevealText>
-            <RevealText delay={0.08} style={{ fontSize: 'clamp(2rem, 6vw, 5rem)' }}>
-              BUILT AROUND YOU
-            </RevealText>
+            <RevealText>INTERNSHIPS</RevealText>
+            <RevealText delay={0.08}>BUILT AROUND YOU</RevealText>
           </motion.h2>
 
           <motion.p
