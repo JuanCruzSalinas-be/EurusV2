@@ -32,7 +32,7 @@ export default function Partners() {
     <section id="partners" className="py-24 md:py-32 border-t border-ink/10 overflow-hidden">
       <h2
         className="text-ink leading-snug tracking-tight mb-14 px-6 md:px-10 uppercase whitespace-nowrap"
-        style={{ fontSize: 'clamp(1.5rem, 3.2vw, 2.5rem)', fontFamily: 'var(--font-eurus)' }}
+        style={{ fontSize: 'clamp(1.5rem, 3.2vw, 2.5rem)', fontFamily: 'var(--font-paper-mono)', fontWeight: 800 }}
       >
         <RevealText>OUR OFFICIAL PARTNERS</RevealText>
       </h2>
@@ -49,7 +49,7 @@ export default function Partners() {
         <div>
           <p
             className="max-w-xl text-2xl md:text-3xl uppercase tracking-widest text-ink mb-4"
-            style={{ fontFamily: 'var(--font-mono)' }}
+            style={{ fontFamily: 'var(--font-paper-mono)', fontWeight: 800 }}
           >
             How Eurus works?
           </p>
