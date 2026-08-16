@@ -44,6 +44,11 @@ body {
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+  /* Eurus only ships a Regular weight, so browsers fake bold differently:
+     Chrome synthesizes a heavier face, Safari doesn't. Disabling synthesis
+     and fattening via text-stroke (below) keeps bold text identical across
+     both instead of relying on each browser's own guess. */
+  font-synthesis: none;
 }
 
 ::selection {
@@ -93,8 +98,13 @@ body {
 }
 
 /* Fattens single-weight display type (Anton has no heavier weight to switch to)
-   by drawing a matching-color stroke on top of the fill, thickening the strokes. */
-.text-extra-bold {
+   by drawing a matching-color stroke on top of the fill, thickening the strokes.
+   Also applied to the standard bold utilities so every "bold" element renders
+   the same stroke-based weight instead of a per-browser synthesized one. */
+.text-extra-bold,
+.font-bold,
+.font-semibold,
+.font-black {
   -webkit-text-stroke: 0.035em currentColor;
   paint-order: stroke fill;
 }
