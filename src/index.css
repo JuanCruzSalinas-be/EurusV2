@@ -23,6 +23,19 @@
   --color-red-dark: #d99a00;
   --color-ink: #0a1f3d;
   --color-ink-soft: #142a52;
+
+  /* Neobrutalist button tokens, mapped onto the site's yellow/navy palette
+     rather than the generic blue/black defaults. */
+  --color-main: var(--color-red);
+  --color-bw: var(--color-cream);
+  --color-text: var(--color-ink);
+  --color-mtext: var(--color-ink);
+  --color-border: var(--color-ink);
+
+  --radius-base: 5px;
+  --shadow-shadow: 4px 4px 0px 0px var(--color-ink);
+  --font-weight-base: 500;
+  --font-weight-heading: 700;
 }
 
 * {

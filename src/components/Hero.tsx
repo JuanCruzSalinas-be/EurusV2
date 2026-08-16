@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import RevealText from './RevealText'
 import Magnetic from './Magnetic'
+import { Button } from './ui/button'
 import techImg from '../assets/industries/tech-src.jpg'
 import financeImg from '../assets/industries/finance-src.jpg'
 
@@ -134,20 +135,14 @@ export default function Hero() {
           className="mt-6 flex flex-wrap items-center justify-center gap-4 relative z-30"
         >
           <Magnetic>
-            <a
-              href="#contact"
-              className="inline-flex items-center rounded-full bg-ink text-cream px-8 py-4 text-lg font-semibold uppercase tracking-wide hover:bg-red transition-colors"
-            >
-              Apply for an internship
-            </a>
+            <Button asChild size="lg" className="h-auto px-8 py-4 text-lg uppercase tracking-wide">
+              <a href="#contact">Apply for an internship</a>
+            </Button>
           </Magnetic>
           <Magnetic>
-            <a
-              href="#industries"
-              className="hover-invert inline-flex items-center rounded-full border border-ink px-8 py-4 text-lg font-semibold uppercase tracking-wide"
-            >
-              See the industries
-            </a>
+            <Button asChild variant="neutral" size="lg" className="h-auto px-8 py-4 text-lg uppercase tracking-wide">
+              <a href="#industries">See the industries</a>
+            </Button>
           </Magnetic>
         </motion.div>
       </main>
