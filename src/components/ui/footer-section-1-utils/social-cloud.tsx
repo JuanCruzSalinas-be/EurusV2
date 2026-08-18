@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import { Mail } from 'lucide-react'
 
 const EMAIL = 'juancruzsalinasyx2@gmail.com'
-const INSTAGRAM_HREF = 'https://instagram.com/eurus' // placeholder — swap in the real Eurus handle
+const INSTAGRAM_HREF = 'https://www.instagram.com/eurus.world/'
 const LINKEDIN_HREF = 'https://linkedin.com/company/eurus' // placeholder — swap in the real Eurus page
 
 // lucide-react dropped brand/logo icons in v1, so these two are minimal custom SVGs.
