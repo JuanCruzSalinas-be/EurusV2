@@ -5,7 +5,7 @@ const LINKS = [
   { label: 'Industries', href: '#industries' },
   { label: 'Partners', href: '#partners' },
   { label: 'Watch', href: '#video' },
-  { label: 'Apply', href: '#contact' },
+  { label: 'Apply', href: 'https://tally.so/r/KY2dkD', external: true },
 ]
 
 export default function Nav() {
@@ -23,7 +23,13 @@ export default function Nav() {
 
       <nav className="hidden md:flex items-center gap-8 text-white text-lg font-semibold uppercase tracking-wide">
         {LINKS.map((l) => (
-          <a key={l.href} href={l.href} className="hover:opacity-60 transition-opacity">
+          <a
+            key={l.href}
+            href={l.href}
+            target={l.external ? '_blank' : undefined}
+            rel={l.external ? 'noreferrer' : undefined}
+            className="hover:opacity-60 transition-opacity"
+          >
             {l.label}
           </a>
         ))}
@@ -51,6 +57,8 @@ export default function Nav() {
               <a
                 key={l.href}
                 href={l.href}
+                target={l.external ? '_blank' : undefined}
+                rel={l.external ? 'noreferrer' : undefined}
                 onClick={() => setOpen(false)}
                 className="hover-invert font-display text-4xl px-4 py-1 text-cream"
               >

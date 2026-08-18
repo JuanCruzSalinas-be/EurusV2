@@ -136,7 +136,9 @@ export default function Hero() {
         >
           <Magnetic>
             <Button asChild size="lg" className="h-auto px-8 py-4 text-lg uppercase tracking-wide">
-              <a href="#contact">Apply for an internship</a>
+              <a href="https://tally.so/r/KY2dkD" target="_blank" rel="noreferrer">
+                Apply for an internship
+              </a>
             </Button>
           </Magnetic>
           <Magnetic>
