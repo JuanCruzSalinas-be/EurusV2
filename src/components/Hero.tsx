@@ -95,10 +95,6 @@ export default function Hero() {
             >
               <a href="#industries" className="block w-16 md:w-40 aspect-[3/3.5] bg-cream/90 backdrop-blur-md rounded-xl md:rounded-[2rem] p-2 md:p-4 overflow-hidden rotate-[-10deg] shadow-2xl hover:rotate-0 transition-transform duration-500">
                 <img src={techImg} alt="Tech internship" className="absolute inset-0 h-full w-full object-cover opacity-60" />
-                <div className="relative text-left mt-auto hidden md:block">
-                  <p className="font-bold text-sm md:text-base text-ink">Tech</p>
-                  <p className="text-[10px] md:text-xs text-ink/70 mt-1">Engineering & product</p>
-                </div>
               </a>
             </motion.div>
 
@@ -109,10 +105,6 @@ export default function Hero() {
             >
               <a href="#industries" className="relative block w-16 md:w-40 aspect-[3/3.5] bg-cream/90 backdrop-blur-md rounded-xl md:rounded-[2rem] p-2 md:p-4 overflow-hidden rotate-[10deg] shadow-2xl hover:rotate-0 transition-transform duration-500">
                 <img src={financeImg} alt="Finance internship" className="absolute inset-0 h-full w-full object-cover opacity-60" />
-                <div className="relative text-left mt-auto self-end hidden md:block">
-                  <p className="font-bold text-sm md:text-base text-ink">Finance</p>
-                  <p className="text-[10px] md:text-xs text-ink/70 mt-1">Markets & analysis</p>
-                </div>
               </a>
             </motion.div>
 
