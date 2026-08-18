@@ -42,7 +42,7 @@ export default function TransitionSection() {
   const textColor = useTransform(
     scrollYProgress,
     toRed,
-    ['#0a1f3d', '#0a1f3d', '#0a1f3d', '#0a1f3d', '#0a1f3d'],
+    ['#6589a4', '#6589a4', '#6589a4', '#6589a4', '#6589a4'],
   )
 
   return (

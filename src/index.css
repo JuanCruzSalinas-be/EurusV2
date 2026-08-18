@@ -30,8 +30,8 @@
   --color-cream: #fdfcfa;
   --color-red: #fbc123;
   --color-red-dark: #d99a00;
-  --color-ink: #0a1f3d;
-  --color-ink-soft: #142a52;
+  --color-ink: #6589a4;
+  --color-ink-soft: #819eb4;
 
   /* Neobrutalist button tokens, mapped onto the site's yellow/navy palette
      rather than the generic blue/black defaults. */
@@ -59,8 +59,8 @@ body {
   margin: 0;
   background-color: var(--color-cream);
   background-image:
-    linear-gradient(to right, #0a1f3d08 1px, transparent 1px),
-    linear-gradient(to bottom, #0a1f3d08 1px, transparent 1px);
+    linear-gradient(to right, #6589a408 1px, transparent 1px),
+    linear-gradient(to bottom, #6589a408 1px, transparent 1px);
   background-size: 4rem 4rem;
   color: var(--color-ink);
   font-family: var(--font-sans);
