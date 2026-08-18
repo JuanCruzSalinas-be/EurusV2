@@ -18,7 +18,9 @@ const INDUSTRIES = [
 function IndustryCard({ ind }: { ind: (typeof INDUSTRIES)[number] }) {
   return (
     <a
-      href="#contact"
+      href="https://tally.so/r/KY2dkD"
+      target="_blank"
+      rel="noreferrer"
       className="group relative block shrink-0 h-[220px] w-[170px] md:h-[420px] md:w-[320px] overflow-hidden rounded-xl md:rounded-2xl bg-ink"
     >
       <img

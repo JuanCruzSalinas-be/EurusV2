@@ -23,7 +23,9 @@ function CircularBadge() {
   return (
     <Magnetic>
       <a
-        href="#contact"
+        href="https://tally.so/r/KY2dkD"
+        target="_blank"
+        rel="noreferrer"
         className="relative w-16 h-16 md:w-36 md:h-36 bg-ink rounded-full flex items-center justify-center shadow-xl rotate-12 hover:scale-105 transition-transform cursor-pointer"
       >
         <div className="absolute inset-1 animate-[spin_10s_linear_infinite]">

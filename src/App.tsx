@@ -4,7 +4,6 @@ import Industries from './components/Industries'
 import TransitionSection from './components/TransitionSection'
 import Partners from './components/Partners'
 import VideoSection from './components/VideoSection'
-import CTA from './components/CTA'
 import Footer from './components/Footer'
 
 function App() {
@@ -16,7 +15,6 @@ function App() {
       <TransitionSection />
       <Partners />
       <VideoSection />
-      <CTA />
       <Footer />
     </div>
   )
