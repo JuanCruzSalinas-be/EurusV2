@@ -1,5 +1,5 @@
-import { Footer as FooterSection } from './ui/footer-section'
+import Footer1 from './ui/footer-section-1'
 
 export default function Footer() {
-  return <FooterSection />
+  return <Footer1 />
 }

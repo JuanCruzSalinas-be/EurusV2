@@ -58,14 +58,14 @@ export default function TransitionSection() {
           </motion.h2>
 
           <motion.p
-            style={{ color: textColor, fontFamily: 'var(--font-mono)' }}
+            style={{ color: textColor, fontFamily: 'var(--font-inter)', fontWeight: 500 }}
             className="max-w-xl text-2xl md:text-3xl uppercase tracking-widest mb-4"
           >
             What Eurus does?
           </motion.p>
 
           <motion.p
-            style={{ color: textColor, fontFamily: 'var(--font-jetbrains)' }}
+            style={{ color: textColor, fontFamily: 'var(--font-inter)', fontWeight: 500 }}
             className="max-w-xl text-lg md:text-xl leading-relaxed mb-20 md:mb-0"
           >
             High school shouldn't be all stress and guessing about the future. EURUS is here so you

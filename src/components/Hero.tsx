@@ -58,7 +58,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           className="max-w-2xl text-center text-base md:text-lg leading-snug text-black/80 mb-10 md:mb-14"
-          style={{ fontFamily: 'var(--font-jetbrains)' }}
+          style={{ fontFamily: 'var(--font-inter)', fontWeight: 500 }}
         >
           Eurus is a work-based learning platform that places high school students in real,
           company-hosted internships across the industries that will define their careers.
