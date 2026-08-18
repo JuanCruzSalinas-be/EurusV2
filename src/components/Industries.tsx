@@ -43,7 +43,7 @@ export default function Industries() {
   return (
     <section id="industries" className="py-24 md:py-32 overflow-hidden">
       <h2
-        className="text-ink leading-snug uppercase px-6 md:px-10"
+        className="text-black leading-snug uppercase px-6 md:px-10"
         style={{ fontSize: 'clamp(1.5rem, 3vw, 2.2rem)', fontFamily: 'var(--font-paper-mono)', fontWeight: 400, letterSpacing: '0.15em' }}
       >
         <RevealText>SOME OF THE INDUSTRIES WE PLACE IN</RevealText>

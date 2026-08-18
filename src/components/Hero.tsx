@@ -57,7 +57,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="max-w-2xl text-center text-base md:text-lg leading-snug text-ink/80 mb-10 md:mb-14"
+          className="max-w-2xl text-center text-base md:text-lg leading-snug text-black/80 mb-10 md:mb-14"
           style={{ fontFamily: 'var(--font-jetbrains)' }}
         >
           Eurus is a work-based learning platform that places high school students in real,

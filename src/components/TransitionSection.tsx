@@ -39,11 +39,7 @@ export default function TransitionSection() {
     toRed,
     ['#fdfcfa', '#fdfcfa', '#fbc123', '#fbc123', '#fdfcfa'],
   )
-  const textColor = useTransform(
-    scrollYProgress,
-    toRed,
-    ['#6589a4', '#6589a4', '#6589a4', '#6589a4', '#6589a4'],
-  )
+  const textColor = '#000000'
 
   return (
     <motion.section
