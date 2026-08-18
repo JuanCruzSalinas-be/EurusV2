@@ -2,13 +2,13 @@ import { useEffect, useRef, useState } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import RevealText from './RevealText'
 import tape from '../assets/decor/tape-clear.png'
-import brookeCagle from '../assets/placeholders/brooke-cagle.jpg'
-import img1047 from '../assets/placeholders/img-1047.png'
+import eurusAnimated from '../assets/placeholders/eurus-animated.png'
+import eurusFarmland from '../assets/placeholders/eurus-farmland.png'
 
 function PlaceholderPhoto({ rotate, image, alt }: { rotate: number; image: string; alt: string }) {
   return (
     <div
-      className="relative mx-auto aspect-[4/5] w-full max-w-[220px] overflow-hidden rounded-sm bg-white border-2 border-ink shadow-2xl"
+      className="relative mx-auto aspect-square w-full max-w-[220px] overflow-hidden rounded-sm bg-white border-2 border-ink shadow-2xl"
       style={{ transform: `rotate(${rotate}deg)` }}
     >
       <img src={image} alt={alt} className="h-full w-full object-cover" />
@@ -77,24 +77,26 @@ export default function TransitionSection() {
           </motion.p>
         </div>
 
-        <div className="relative flex flex-col items-center max-w-xl mx-auto md:max-w-none">
-          <img
-            src={tape}
-            alt=""
-            className="relative z-10 w-20 -mb-6 drop-shadow-md"
-            style={{ transform: 'rotate(5deg)' }}
-          />
+        <div className="relative flex flex-col items-center gap-10 max-w-xl mx-auto md:max-w-none">
+          <div className="relative flex flex-col items-center">
+            <img
+              src={tape}
+              alt=""
+              className="relative z-10 w-20 -mb-4 drop-shadow-md"
+              style={{ transform: 'rotate(5deg)' }}
+            />
+            <PlaceholderPhoto rotate={-2} image={eurusAnimated} alt="Eurus city skyline illustration" />
+          </div>
 
-          <PlaceholderPhoto rotate={-2} image={brookeCagle} alt="Placeholder photo" />
-
-          <img
-            src={tape}
-            alt=""
-            className="relative z-10 w-20 -my-6 drop-shadow-md"
-            style={{ transform: 'rotate(-3deg)' }}
-          />
-
-          <PlaceholderPhoto rotate={1.5} image={img1047} alt="Placeholder photo" />
+          <div className="relative flex flex-col items-center">
+            <img
+              src={tape}
+              alt=""
+              className="relative z-10 w-20 -mb-4 drop-shadow-md"
+              style={{ transform: 'rotate(-3deg)' }}
+            />
+            <PlaceholderPhoto rotate={1.5} image={eurusFarmland} alt="Eurus farmland illustration" />
+          </div>
         </div>
       </div>
     </motion.section>
